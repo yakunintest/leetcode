@@ -12,6 +12,13 @@ function bind(fn, ctx, ...rest) {
   }
 }
 
+// ES6
+function bind2(fn, ctx, ...rest) {
+  return function (...args) {
+    return fn.call(ctx, ...rest.concat(...args))
+  }
+}
+
 let basic = {
   'name': 'xyz',
 };
@@ -22,3 +29,4 @@ function callMe(args) {
 
 bind(callMe, basic)(999);
 bind(callMe, basic, 123)();
+bind2(callMe, basic, 123)();
