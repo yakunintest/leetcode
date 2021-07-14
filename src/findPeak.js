@@ -20,7 +20,7 @@ const findPeakElement = function (nums) {
     let mid = Math.floor((left + right) / 2);
 
     // восходящий тренд
-    if(nums[mid] < nums[mid + 1]){
+    if (nums[mid] < nums[mid + 1]) {
       left = mid;
     } else {
       right = mid;
