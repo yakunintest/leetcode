@@ -27,6 +27,7 @@ function callMe(args) {
   console.log('Hi! my name is ' + this.name + args);
 }
 
+
 bind(callMe, basic)(999);
 bind(callMe, basic, 123)();
 bind2(callMe, basic, 123)();
