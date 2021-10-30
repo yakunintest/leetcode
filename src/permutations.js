@@ -11,18 +11,17 @@ const permute = (nums) => {
     }
     for (let i = 0; i < nums.length; i++) {
       arr.push(nums[i]); // 0
-      console.log('1==>', arr);
+      // console.log('1==>', arr);
       let decreased = nums.filter((n, index) => index !== i);
-      console.log('2==>', decreased);
+      // console.log('2==>', decreased);
       helper(decreased, arr);
-      console.log('3==>', arr)
+      // console.log('3==>', arr)
       arr.pop(); // unchoose
-
     }
   }
 
   helper(nums, []);
-  console.log('4==>', result);
+  // console.log('4==>', result);
   return result;
 };
 
