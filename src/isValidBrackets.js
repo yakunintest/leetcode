@@ -73,6 +73,7 @@ console.log(isValid("([)]"));
 console.log(isValid("{[]}"));
 
 console.log(isValid2("()"));
+console.log(isValid2("(((((("));
 console.log(isValid2("()[]{}"));
 console.log(isValid2("(]"));
 console.log(isValid2("([)]"));

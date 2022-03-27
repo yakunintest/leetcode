@@ -1,7 +1,6 @@
 const arr1 = [3, 5, 6, 10, 11, 20];
 const arr2 = [1, 1, 1, 1, 2, 7, 8, 15, 19];
 
-
 // O(n) time & O(n) space
 function mergeTwo(arr1, arr2) {
   let merged = [];
